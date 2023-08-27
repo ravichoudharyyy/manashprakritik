@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.manashprakritik.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .home-demo .item {
+      background: #ff3f4d;
+    }
+
+    .home-demo h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 5rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .pro {
+      align-items: center;
+    }
+
+    .svg-container {
+      display: inline-block;
+      /* Make the container inline */
+      transition: transform 0.2s;
+      /* Apply smooth transition */
+      cursor: pointer;
+    }
+
+    .svg-container:hover {
+      transform: scale(1.2);
+      /* Increase size on hover */
+    }
+
+    * {
+      scroll-behavior: smooth;
+    }
+
+    .navigation a {
+      position: relative;
+      font-size: 1.1em;
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 40px;
+    }
+
+    .navigation a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background: green;
+      border-radius: 5px;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .5s;
+    }
+
+    .navigation a:hover::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    
+    .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white; 
+      z-index: 1000; /* Ensure it's above other content */
+    }
+
+    .header-fixed{
+      width: 100%;
+      height: 80px;
+    }
+
+    .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: indigo;
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <section id="home">
+    <div class="header-fixed">
+    <header class="text-black-600 body-font sticky-header text-black-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
+          <img src="img\White And Black Modern Abstract Beauty Logo.png" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-green-500 rounded-full svg-container" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl animate-bounce">ManashPrakritik</span>
+        </a>
+        <nav class="navigation md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a href="#home" class="mr-5 hover:text-black-900 svg-container">Home</a>
+          <a href="#about" class="mr-5 hover:text-black-900 svg-container">About</a>
+          <a href="#products" class="mr-5 hover:text-black-900 svg-container">Products</a>
+          <a href="#services" class="mr-5 hover:text-black-900 svg-container">Services</a>
+          <a href="#contact" class="mr-5 hover:text-black-900 svg-container">Contact us</a>
+        </nav>
+        <div class="svg-container">
+          <button
+            class="inline-flex items-center bg-green-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-200 rounded text-base mt-4 md:mt-0 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">Payout
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="svg-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-basket3 animate-bounce" viewBox="0 0 16 16">
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    </header>
+  </section>
+  <!--Carousel-->
+
+  <div class="home-demo">
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="img\manas.png">
+      </div>
+      <div class="item">
+        <img src="img\authnetic.png">
+      </div>
+      <div class="item">
+        <img src="img\juice.png">
+      </div>
+      <div class="item">
+        <img src="img\muraba.png">
+      </div>
+      <div class="item">
+        <img src="img\refresh.png">
+      </div>
+      <div class="item">
+        <img src="img\Untitled design.png">
+      </div>
+    </div>
+  </div>
+
+  <!--Ecommerce-->
+
+  <section id="products" class="text-gray-600 body-font py-[100px] border-t-[8px] border-[]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\71DUyMDGClL._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pack</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Dried Salted Amla</h2>
+            <p class="mt-1 animate-bounce">₹80.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\71nEtsptWJL._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Jar</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Organic Amla Powder</h2>
+            <p class="mt-1 animate-bounce">₹100.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\81BCGwS-O0L._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pack</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Amla Pachak</h2>
+            <p class="mt-1 animate-bounce">₹50.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\81qmagSXxOL._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Glass Jar</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Honey Ginger Amla Candy</h2>
+            <p class="mt-1 animate-bounce">₹180.40</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\816KmOhdtfS._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Jar</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Sweet Amla Candy</h2>
+            <p class="mt-1 animate-bounce">₹160.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\81hMvGasP6L._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Jar</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Suger Free Amla Candy</h2>
+            <p class="mt-1 animate-bounce">₹200.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\81mNUMMJA8L._AC_UL900_SR900,600_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pack of 2</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Amla Candy</h2>
+            <p class="mt-1 animate-bounce">₹120.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="img\51fbmjTCeWL._AC_UL300_SR300,200_.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pack</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Amla Murabba</h2>
+            <p class="mt-1 animate-bounce">₹180.40</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Order This-->
+
+  <section class="text-gray-600 body-font py-[100px] border-t-[8px] border-[]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-80 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full scale-75" src="img\order.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 animate-bounce">Chatpata Amla</h2>
+          <button
+            class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded svg-container">Add
+            to cart</button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-80 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full scale-75" src="img\oder2.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 animate-bounce">Aloe vera Juice</h2>
+          <button
+            class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded svg-container">Add
+            to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-80 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full scale-75" src="img\oder3.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 animate-bounce">Amla Laddu</h2>
+          <button
+            class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded svg-container">Add
+            to cart</button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-80 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full scale-75" src="img\odewr4.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 animate-bounce">Amla Murabba</h2>
+          <button
+            class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded svg-container">Add
+            to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--feature-->
+
+  <section id="about" class="text-gray-600 body-font py-[100px] border-t-[8px] border-[]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">ManashPrakritik Gives an
+          Exotic Flavourfull and Healthy Products</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Check all our promising Services and Health
+          benefit Guranted</p>
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Zero Preservatives</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Zero Artificial Falvours</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Loaded with Vitamins & Minerals</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Improves Health</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">100% Natural</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Made for all Age</span>
+          </div>
+        </div>
+  </section>
+
+  <!--stastic-->
+  <section id="services" class="text-gray-600 body-font py-[100px] border-t-[8px] border-[]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">5.7K</h2>
+          <p class="leading-relaxed">Daily Users</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3.8K</h2>
+          <p class="leading-relaxed">Customer</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35+</h2>
+          <p class="leading-relaxed">Countries</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4+</h2>
+          <p class="leading-relaxed">Products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--feedback-->
+
+  <section id="contact" class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div
+        class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+          marginwidth="0" scrolling="no"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.9262434837174!2d73.0008877089803!3d26.231585976963963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b84f0f96c0f%3A0x245abd07a25e926a!2sManash%20Prakriti!5e0!3m2!1sen!2sin!4v1692078335344!5m2!1sen!2sin"
+          style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div class="lg:w-1/2 px-6">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+            <p class="mt-1">Plot No. 46 Kh. No. 1105/740 Basni 2nd Phase, Rajasthan 342005</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+            <a class="text-green-500 leading-relaxed">manashprakritik@email.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+            <p class="leading-relaxed">0291-2255996</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">We Heartly welcomes your valuable feedback and response.. </p>
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+          <input type="text" id="name" name="name"
+            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message"
+            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button
+          class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
+        <p class="text-xs text-gray-500 mt-3">Thank You! We are Happy to Serve You.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Pack</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Dried Salted Amla</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Amla Pachak</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Amla Candy</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Jar</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Organic Amla Powder</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Honey Ginger Amla</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Suger Free Amla</a>
+            </li>
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Box</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Suger Free Amla</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Amla Laddu</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Amla Cookies</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
+          <div
+            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <label for="footer-field" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="text" id="footer-field" name="footer-field"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button
+              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="img\White And Black Modern Abstract Beauty Logo.png" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">ManashPrakritik</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 ManashPrakritik —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@manashprakritik</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <a href="#home" class="back-to-top">
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+    </a>
+    
+  </footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript">$(document).ready(function () {
+    // add all to same gallery
+    $(".gallery-items a").attr("data-fancybox", "mygallery");
+    // assign captions and title from alt-attributes of images:
+    $(".gallery-items a").each(function () {
+      $(this).attr("data-caption", $(this).find("img").attr("alt"));
+      $(this).attr("title", $(this).find("img").attr("alt"));
+    });
+    // start fancybox:
+    $(".gallery-items a").fancybox();
+  });
+</script>
+<script>$(function () {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 3,
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 1000,
+      nav: true
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  backToTopButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    const targetElement = document.querySelector(this.getAttribute("href"));
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+</script>
+
+</html>
